@@ -277,17 +277,6 @@ nav.show div.icon-close {
   position: relative;
 }
 
-/* #home .image::before {
-    content: '';
-    height: 100%;
-    width: 100%;
-    background: var(--base-color-second);
-    position: absolute;
-    top: -16.8%;
-    left: 16.7%;
-    z-index: 0;
-  } */
-
 #home .image img {
   position: relative;
 }
@@ -441,7 +430,7 @@ footer .logo {
 footer .brand p {
   color: var(--text-color-light);
   margin-bottom: 0.75rem;
-  display:block;
+  display: block;
   text-align: center;
 }
 
@@ -497,11 +486,6 @@ footer .social a:hover {
   nav .menu ul li a.title {
     font: 400 1rem var(--body-font);
     -webkit-font-smoothing: antialiased;
-  }
-
-  nav .menu ul li a.title.active {
-    font-weight: bold;
-    -webkit-font-smoothing: auto;
   }
 
   nav .icon-menu {

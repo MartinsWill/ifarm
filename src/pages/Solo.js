@@ -6,12 +6,12 @@ import "../styles/Solo.css";
 import GardenImg from "../img/garden-bg.jpg";
 import SobreImg from "../img/sobre-img.jpg";
 
-
-
 function Solo() {
+
   const [dados, setDados] = useState({});
 
   useEffect(() => {
+    
     const monitorRef = database.ref("/dados");
     monitorRef.on("value", (snapshot) => {
       if (snapshot.val() != null) {
@@ -73,7 +73,10 @@ function Solo() {
             </div>
             <div className="text">
               <h2 className="title">Monitore seu jardim através do iFarm</h2>
-              <p>Sistema voltado para o monitoramento da umidade e temperatura do solo.</p>
+              <p>
+                Sistema voltado para o monitoramento da umidade e temperatura do
+                solo.
+              </p>
               <a className="button" href="#monitorar">
                 Começar a monitorar
               </a>
@@ -89,8 +92,8 @@ function Solo() {
             <div className="text">
               <h2 className="title">Quem somos</h2>
               <p>
-                O iFarm é um projeto capaz de monitorar a temperatura e umidade 
-                 de um solo.
+                O iFarm é um projeto capaz de monitorar a temperatura e umidade
+                de um solo.
               </p>
               <br />
               <p>
@@ -197,7 +200,7 @@ function Solo() {
                 desenvolvido.
               </p>
               <a
-                href="https://api.whatsapp.com/send?phone=+5511998456754&text=Oi! Gostaria de agendar um horário"
+                href="https://github.com/MartinsWill/ifarm"
                 className="button"
                 target="_blank"
               >
